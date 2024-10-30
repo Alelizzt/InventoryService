@@ -1,4 +1,4 @@
-package com.system.inventory.entities;
+package com.system.inventory.model;
 
 import java.util.List;
 
@@ -10,9 +10,11 @@ import jakarta.persistence.OneToMany;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Entity
 @AllArgsConstructor
+@NoArgsConstructor
 @Data
 @Builder
 public class Category {
