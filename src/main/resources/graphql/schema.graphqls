@@ -1,6 +1,8 @@
 type Query {
     showProducts:[Product],
     showProductById(id : String) : Product,
+    showCategories:[Category],
+    showCategoryById(id: Float) : Category,
 }
 
 type Product {
@@ -14,4 +16,5 @@ type Product {
 type Category {
     id: Float,
     name: String,
+    products: [Product]
 }
